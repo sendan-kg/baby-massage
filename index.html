@@ -197,7 +197,7 @@
       object-fit: cover;
     }
 
-    /* ===== Manga / Content Image ===== */
+    /* ===== Manga ===== */
     .img-wrap {
       max-width: 480px;
       margin: 0 auto;
@@ -207,6 +207,51 @@
       border: 3px solid var(--border);
     }
     .img-wrap img { width: 100%; }
+
+    /* ===== Three Pillars ===== */
+    .pillars {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .pillar {
+      flex: 1;
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px 10px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(200,120,155,0.1);
+      border-top: 3px solid var(--primary);
+    }
+    .pillar__icon { font-size: 2rem; margin-bottom: 8px; }
+    .pillar__label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* ===== Effect Cards ===== */
+    .effect-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .effect-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 2px 10px rgba(200,120,155,0.08);
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+    .effect-card__icon {
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
 
     /* ===== Detail Table ===== */
     .detail-table {
@@ -411,21 +456,61 @@
 <!-- ===== WHAT IS ===== -->
 <section class="section section--light">
   <h2 class="section-title">ベビーマッサージとは？</h2>
-  <p class="section-lead">赤ちゃんと過ごす、やさしい時間</p>
+  <p class="section-lead">赤ちゃんとの関係を育てる3つの基本</p>
 
-  <div style="background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 14px rgba(200,120,155,0.1);margin-bottom:20px;">
-    <p style="font-size:0.95rem;color:#444;line-height:1.95;">
-      赤ちゃんと過ごす日々は、嬉しいこと・幸せなことがたくさん。
+  <div class="pillars">
+    <div class="pillar">
+      <div class="pillar__icon">🤲</div>
+      <div class="pillar__label">触れる</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar__icon">👀</div>
+      <div class="pillar__label">見つめる</div>
+    </div>
+    <div class="pillar">
+      <div class="pillar__icon">💬</div>
+      <div class="pillar__label">話しかける</div>
+    </div>
+  </div>
+
+  <div style="background:#fff;border-radius:16px;padding:22px 20px;box-shadow:0 2px 14px rgba(200,120,155,0.1);margin-bottom:16px;">
+    <p style="font-size:0.93rem;color:#444;line-height:1.95;">
+      「触れる・見つめる・話しかける」——この3つが赤ちゃんとの関係を築く大切な基本です。<br><br>
+      赤ちゃんと過ごす日々は嬉しいこと・幸せなことがたくさん。
       でも一方で、不安な気持ちや悩み、ブルーになることもありますよね。<br><br>
-      ベビーマッサージを通して<strong>赤ちゃんの肌にふれ、ゆったりと親子の絆を深めましょう。</strong><br><br>
-      当園のベビーマッサージでは、お母さんもリラックスしていただけるよう、
-      <strong>心が安らぐ音楽とアロマ</strong>で気持ちよい空間をご用意しています。
-      マッサージの後はハーブティーを飲んでホッと一息。皆さまのご参加をお待ちしています。
+      ベビーマッサージを通して<strong>赤ちゃんの肌にふれ、ゆったりと親子の絆を深めましょう。</strong>
     </p>
   </div>
 
-  <div style="background:var(--primary-light);border-radius:12px;padding:16px 18px;font-size:0.88rem;color:var(--primary-dark);text-align:center;font-weight:600;border:1.5px solid var(--border);">
-    🌿 スキンシップをたっぷり受けた赤ちゃんは安心感を覚え、<br>健康面・脳の発達・情緒の安定に繋がります
+  <div style="background:linear-gradient(135deg,#F5C0D5 0%,#E8A0BE 100%);border-radius:14px;padding:18px 20px;color:#6B2A4A;font-size:0.9rem;line-height:1.85;">
+    <p style="font-weight:700;margin-bottom:8px;">🎵 当園のベビーマッサージの特徴</p>
+    <p>お母さんにもリラックスしていただけるよう、<strong>心が安らぐ音楽とアロマ</strong>で気持ちよい空間をご用意しています。マッサージの後はみんなで<strong>ハーブティー</strong>を飲んでほっと一息。</p>
+  </div>
+</section>
+
+
+<!-- ===== BABY MASSAGE EFFECTS ===== -->
+<section class="section section--cream" style="padding-top:36px;padding-bottom:40px;">
+  <h2 class="section-title">ベビーマッサージの効果</h2>
+  <p class="section-lead">スキンシップが赤ちゃんの成長を育てます</p>
+
+  <div class="effect-cards">
+    <div class="effect-card">
+      <div class="effect-card__icon">🩸</div>
+      <div><strong style="color:#8B4D6A;">血行・循環が良くなる</strong><br>全身の血流が促進され、体が温まります。</div>
+    </div>
+    <div class="effect-card">
+      <div class="effect-card__icon">🧠</div>
+      <div><strong style="color:#8B4D6A;">脳の発達を促す</strong><br>肌への刺激が脳を活性化し、健やかな成長をサポートします。</div>
+    </div>
+    <div class="effect-card">
+      <div class="effect-card__icon">😌</div>
+      <div><strong style="color:#8B4D6A;">情緒の安定</strong><br>安心感が高まり、泣き止みやすくなったり、睡眠が深くなったりします。</div>
+    </div>
+    <div class="effect-card">
+      <div class="effect-card__icon">💞</div>
+      <div><strong style="color:#8B4D6A;">親子の絆が深まる</strong><br>たっぷりのスキンシップが、かけがえのない絆を育てます。</div>
+    </div>
   </div>
 </section>
 
@@ -457,18 +542,6 @@
 </section>
 
 
-<!-- ===== CONTENT IMAGE ===== -->
-<section class="section section--pink" style="padding-top:36px;padding-bottom:40px;">
-  <h2 class="section-title">ベビーマッサージのご案内</h2>
-  <p class="section-lead">詳しい内容はこちら</p>
-  <div class="img-wrap">
-    <img
-      src="%E5%86%99%E7%9C%9F/%E3%83%99%E3%83%93%E3%83%BC%E3%83%9E%E3%83%83%E3%82%B5%E3%83%BC%E3%82%B8%E5%86%85%E5%AE%B9.jpg"
-      alt="ベビーマッサージ内容説明"
-      loading="lazy"
-    >
-  </div>
-</section>
 
 
 <!-- ===== OVERVIEW ===== -->
@@ -513,35 +586,21 @@
 
 <!-- ===== MERITS ===== -->
 <section class="section section--light">
-  <h2 class="section-title">ベビーマッサージの効果</h2>
+  <h2 class="section-title">当園のベビーマッサージの魅力</h2>
 
   <div class="merit-list">
     <div class="merit-item">
-      <div class="merit-icon">💞</div>
-      <div class="merit-body">
-        <div class="merit-title">親子の絆が深まる</div>
-        触れる・見つめる・話しかける——この3つが赤ちゃんとの関係を育てます。毎日の育児がもっと楽しくなります。
-      </div>
-    </div>
-    <div class="merit-item">
-      <div class="merit-icon">🧠</div>
-      <div class="merit-body">
-        <div class="merit-title">健やかな成長をサポート</div>
-        スキンシップたっぷりの赤ちゃんは安心感が高まり、健康面・脳の発達・情緒の安定に繋がります。
-      </div>
-    </div>
-    <div class="merit-item">
       <div class="merit-icon">🌿</div>
       <div class="merit-body">
-        <div class="merit-title">ママもリラックスできる時間</div>
-        音楽・アロマで整えた空間で、お母さん自身もほっと一息つける時間です。育児の疲れを癒しましょう。
+        <div class="merit-title">音楽・アロマでリラックスできる空間</div>
+        心が安らぐ音楽とアロマで整えた空間で、赤ちゃんもお母さんもほっとできます。育児の疲れを癒しましょう。
       </div>
     </div>
     <div class="merit-item">
       <div class="merit-icon">👩‍👩‍👧</div>
       <div class="merit-body">
         <div class="merit-title">少人数でアットホーム</div>
-        定員4組の少人数制。はじめての方も安心して参加できます。他のママとのつながりも生まれます。
+        定員4組の少人数制。はじめての方も安心して参加できます。同じ月齢のママ同士のつながりも生まれます。
       </div>
     </div>
     <div class="merit-item">
